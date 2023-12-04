@@ -1,0 +1,61 @@
+<link href="style.css" rel="stylesheet">
+
+<body>
+	<div class="text-center">
+		<div class="display-inline">
+<h2 class="rainbow rainbow_text_animated">COMMANDS</h2>
+			<p style="text-align: left;"><span style="color: #ff99cc;">--help</span><br>
+			<br>
+			<span style="color: #ff99cc;">Usage: python -m ASearch_lxwx [OPTIONS] COMMAND [ARGS]...</span><br>
+			<span style="color: #ff99cc;">Options:</span></p>
+			<p style="text-align: left;"><br>
+			<span style="color: #ff99cc;">-v, --verbose <span style="color: #999999;">Print and log debug messages</span></span><br>
+			<span style="color: #ff99cc;">--debug <span style="color: #999999;">Run with driver header for debugging</span></span><br>
+			<span style="color: #ff99cc;">--proxy <span style="color: #999999;">Route traffic through proxy server (can be used with --TOR for more security).</span></span><br>
+			<span style="color: #999999;">[Slow] [More secure] [Detectablility depends on proxy]</span><br>
+			<span style="color: #ff99cc;">--tor <span style="color: #999999;">Route all requests through TOR servers. (Recommended to use with VPN or Proxy)</span></span><br>
+			<span style="color: #999999;">[Slower] [More secure] [More detectable than regular traffic <span style="color: #ff5b5b;">(not compatible with --no-driver)</span><br></span></p>
+			<p style="text-align: justify;"><span style="color: #ff99cc;">--nodiver <span style="color: #999999;">Scrape data using BS4 and Requests. [Quickest] [More detectable and you will probably get blocked by many websites]</span><br>
+			<span style="color: #ff99cc;">--help <span style="color: #999999;">Show this message and exit.</span></span></span></p>
+			<h3 class="rainbow rainbow_text_animated">PENTESTING</h3>
+			<p style="text-align: left;"><span style="color: #808080;">Useful for vulnerability testing</span></p>
+			<p style="text-align: left;"><br>
+			<span style="color: #f6ff0e;"></span><span><span style="color: #72cfff;">findelem <span style="color: #999999;">Find all elements in a website by type</span></span><br>
+			<span style="color: #72cfff;">--url <span style="color: #999999;">TEXT URL to retrieve [required]</span></span><br>
+			<span style="color: #72cfff;">-fe, --findelem TEXT <span style="color: #999999;">Find all of specified element on webpage [required]</span></span><br>
+			<span style="color: #72cfff;">--help <span style="color: #999999;">Show this message and exit.</span></span><br>
+			<br>
+			<span style="color: #72cfff;">inject <span style="color: #999999;">Find element using a variety of different identifiers Inject queries into given text element (if unsure run findelem first)</span></span><br>
+			<span style="color: #72cfff;">-by, --elemidentifier <span style="color: #999999;">[ID|XPATH|CSS|name|CLASS_NAME|TAG_NAME] Specify how you want to identify an element [required]</span></span><br>
+			<span style="color: #72cfff;">--element TEXT <span style="color: #999999;">element name [required]</span></span><br>
+			<span style="color: #72cfff;">--url TEXT <span style="color: #999999;">URL to retrieve [required]</span></span><br>
+			<span style="color: #72cfff;">-input, --inject</span><br>
+			<span style="color: #72cfff;">--help <span style="color: #999999;">Show this message and exit.</span></span><br>
+			<br>
+			<span style="color: #72cfff;">lookup <span style="color: #999999;">Get WHOIS information on given URL</span></span><br>
+			<span style="color: #72cfff;">--url TEXT <span style="color: #999999;">URL to retrieve [required]</span></span><br>
+			<span style="color: #72cfff;">--help <span style="color: #999999;">Show this message and exit.</span></span><br>
+			<span style="color: #f6ff0e;"></span></span></p>
+			<h3 class="rainbow rainbow_text_animated">WEBSCRAPING</h3>
+			<p style="text-align: left;"><span style="color: #808080;">Useful for scraping information off the web</span></p>
+			<p style="text-align: left;"><span style="color: #f9ff60;">open <span style="color: #808080;">Get contents of webpage (Body, Images, Urls. . . (experimental))</span></span><br>
+			<span style="color: #f9ff60;">--url <span style="color: #808080;">TEXT URL to retrieve [required]</span></span><br>
+			<span style="color: #f9ff60;">-t, --text <span style="color: #808080;">Get all text from given url</span></span><br>
+			<span style="color: #f9ff60;">-img, --images <span style="color: #808080;">Get all images from given url</span></span><br>
+			<span style="color: #f9ff60;">-s, --scroll <span style="color: #808080;">Scroll down to load more elements (takes longer)</span></span><br>
+			<span style="color: #f9ff60;">-d, --download <span style="color: #808080;">Download all images from URL, automatically creates a folder and places them inside</span></span><br>
+			<span style="color: #f9ff60;">-ss, --screenshot <span style="color: #808080;">Take screenshot of given URL</span></span><br>
+			<span style="color: #f9ff60;">--help <span style="color: #808080;">Show this message and exit.</span></span><br>
+			<br>
+			<span style="color: #f9ff60;">send <span style="color: #808080;">Send search query to google and duckduckgo</span></span><br>
+			<span style="color: #f9ff60;">-q, --query TEXT <span style="color: #808080;">Query to send (pass as STR) [required]</span></span><br>
+			<span style="color: #f9ff60;">--help <span style="color: #808080;">Show this message and exit.</span></span><br>
+			<br>
+			<span style="color: #f9ff60;">dork <span style="color: #808080;">Send dork query, can be randomly be generated from text files, to generate random dork pass "g"</span></span><br>
+			<span style="color: #f9ff60;">-q, --query TEXT <span style="color: #808080;">Query to send (pass as STR)</span></span><br>
+			<span style="color: #f9ff60;">-p, --proxy TEXT <span style="color: #808080;">Proxy to send request &lt;IP:PORT&gt;</span></span><br>
+			<span style="color: #f9ff60;">--help <span style="color: #808080;">Show this message and exit.</span></span><br>
+			<br>
+			<span style="color: #f9ff60;">test <span style="color: #808080;">Test Module</span></span></p>
+		</div>
+</body>
